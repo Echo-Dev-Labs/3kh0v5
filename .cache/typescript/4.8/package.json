@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "dependencies": {
+    "types-registry": "^0.1.670"
+  },
+  "devDependencies": {
+    "@types/babel__code-frame": "^7.0.6",
+    "@types/babel__core": "^7.20.4",
+    "@types/babel__generator": "^7.6.7",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.20.4",
+    "@types/gensync": "^1.0.3",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/semver": "^7.5.5"
+  }
+}

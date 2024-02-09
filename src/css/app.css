@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+.header  {
+    margin: auto;
+    margin-top: 2vh;
+    width: 95%;
+    height: 10vh;
+    border-radius: 10px;
+    font-family: 'Titillium Web', sans-serif;
+    position: fixed;
+    z-index: 5;
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 10px;
+}
