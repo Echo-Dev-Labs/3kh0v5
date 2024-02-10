@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #FFA500;
+    --secondary-color: #FF00FF;
+    --tertiary-color: #00FFFF;
+    --bg-color: black;
+    --text-color: #FFFFFF;
+    --link-color: #7fb2f5;
+    --link-hover-color: #a590f4;
+    --button-bg-color: #46c846;
+    --button-hover-bg-color: #5bd45b;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+  }
+  
+  .content {
+    text-align: center;
+    color: var(--text-color);
+  }
+  
+  
+  h1 {
+    font-size: 100px;
+    color: var(--primary-color);
+    margin:0;
+    cursor:pointer;
+    transition: color 0.3s ease;
+  }
+  
+  h1:hover {
+    color: var(--secondary-color);
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--button-bg-color);
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover-bg-color);
+  }
+  
+  .desc {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  .desc p {
+    margin-top: -10px;
+  }
+  
