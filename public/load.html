@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3kh0｜Loading</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
+        
+        body {
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            position: fixed;
+            top:0;
+            display: flex;
+        }
+        
+        .loading-screen {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: -2%;
+            height: 100%;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        p {
+            font-family: Roboto;
+        }
+        
+        .info {
+            color: #46c846;
+            max-width: 600px;
+            text-align: center;
+            margin: 35px 0 0;
+        }
+        
+        .ring {
+            display: inline-block;
+            width: 160px;
+            height: 160px;
+        }
+        
+        .ring:after {
+            content: " ";
+            display: block;
+            width: 128px;
+            height: 128px;
+            margin: 16px;
+            border-radius: 50%;
+            border: 12px solid #46c846;
+            border-color: #46c846 transparent #46c846 transparent;
+            animation: ring 1s linear infinite;
+        }
+        
+        @keyframes ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head> 
+<body>
+    <div class="loading-screen">
+        <div class="ring"></div>
+        <p class="info">
+            Please wait while our servers handle your request. <br> Our site may be experiencing heavy load affecting load times. 
+        </p>
+    </div>
+    <iframe id="site-iframe" src="" style="z-index: 9999;"></iframe>
+    <script>
+        var iframe = document.getElementById("site-iframe");
+        iframe.src = localStorage.getItem("url");
+        
+        iframe.onload = function() {
+            iframe.style.display = "block";
+            document.querySelector(".loading-screen").style.display = "none";
+            document.title = "3kh0｜Loaded Search";
+        };
+    </script>
+</body>
+</html>
