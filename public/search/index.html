@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>3kh0</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="description" content="We're back!">
+  <meta name="theme-color" content="#FF5733">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="/uv/uv.bundle.js" defer></script>
+  <script src="/uv/uv.config.js" defer></script>
+  <script src="/uv/js/register-sw.js" defer></script>
+  <script src="/uv/js/search.js" defer></script>
+  <script src="/uv/js/index.js" defer></script>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+      <img src="/imgs/logo.png">
+      <h3>3kh0</h3>
+    </div>
+    <div class="nav-items">
+      <li><a>Home</a></li>
+      <li><a>Games</a></li>
+      <li><a>Search</a></li>
+      <li><a>Settings</a></li>
+    </div>
+  </div>
+  <div class="container">
+    <h1>Search</h1>
+    <p>Search the web freely with no restrictions!</p>
+    <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <form id="uv-form" class="flex-center">
+          <input
+            id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/>
+          <input id="uv-address" type="text" placeholder="Search the web freely" />
+        </form>
+    </div>
+  </div>
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="/script.js"></script>
+</body>
+</html>

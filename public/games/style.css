@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 65px;
+    border-radius: 50%;
+  }
+  
+  .logo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-left: 5px;
+    background: linear-gradient(to right, #FFA500, #FF00FF, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-items li {
+    margin-right: 20px;
+  }
+  
+  .nav-items li:last-child {
+    margin-right: 50px;
+  }
+  
+  .nav-items li a {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.4s ease;
+  }
+  
+  .nav-items li a:hover {
+    color: #00FFFF;
+  }
+  
+  h1 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+  }
+  
+  .search-container {
+    display: flex;
+    width:80vh;
+    margin: 10px auto;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .search-container i {
+    color: grey;
+    margin: 5px;
+  }
+  
+  .search-container input[type="text"] {
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    outline: none;
+    width: 200px; 
+  }
+  
+  .g-container {
+    display: flex;
+    margin:10px;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  
+.g {
+    width: 200px;
+    margin: 10px;
+    border-radius:5px;
+    text-align: center;
+    outline:none;
+    background-color: rgba(255, 255, 255, 0.05); 
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .g:hover {
+    transform: scale(1.05); 
+  }
+  
+  .g img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  
+  .g h3 {
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
