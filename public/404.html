@@ -5,21 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>404 Error</title>
   <link href="404.css" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="content">
     <div class="logo-wrapper">
-      <h1>404 | Error</h1>
+      <h1>Uh oh!</h1>
+      <h3>Seems like you ran into an error</h3>
+      <br>
     </div>
     <div class="desc">
-      <p>The server could not route your request. </p>
+      <p>The server could not route your request. :(</p>
       <p id="uv-error"></p>
       <code id="uv-error-code"></code>
       <button id="uv-register-sw" value="Register service worker">Register ServiceWorker</button>
+      <button value="Go home" onclick="window.open('/', '_self')">Go to the home page</button>
     </div>
   </div>
-
+  <div id="particles-js"></div>
+  <script src="particles.min.js"></script>
+  <script src="/script.js"></script>
   <script src="uv/uv.bundle.js"></script>
   <script src="uv/uv.config.js"></script>
   <script src="register-sw.js"></script>
