@@ -29,36 +29,48 @@ body {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px 2.5px var(--primary-color); 
 }
+
 
 .logo {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo img {
-  width: 65px;
+  width: 50px;
   border-radius: 50%;
 }
 
 .logo h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   margin-left: 5px;
   background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--tertiary-color));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.time {
+  margin-left: auto;
+  color: var(--text-color);
+  margin-right:15px;
+}
+
 .nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style-type: none;
+  flex-grow: 1; 
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .nav-items li {
@@ -66,7 +78,7 @@ body {
 }
 
 .nav-items li:last-child {
-  margin-right: 50px;
+  margin-right: 0;
 }
 
 .nav-items li a {
@@ -75,21 +87,29 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-size: 18px;
-  position: relative;
   transition: all 0.4s ease;
 }
 
 .nav-items li a:hover {
-  color: var(--tertiary-color);
+  background: linear-gradient(to right, var(--secondary-color), var(--tertiary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width:80vh;
   align-items: center;
+  padding:30px 15px;
+  margin: 0 auto;
+  border-radius: 15px;
+  border: 1px solid var(--tertiary-color);
   z-index: 1;
-  margin-top:10vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 10vh;
   text-align: center;
   color: var(--text-color);
   font-family: 'Poppins', sans-serif;
@@ -138,4 +158,8 @@ body {
 
 .button:hover {
   background-color: var(--button-hover-bg-color);
+}
+
+span{
+  vertical-align: text-top;
 }

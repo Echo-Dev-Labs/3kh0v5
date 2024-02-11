@@ -25,62 +25,6 @@ body {
   z-index: -1;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 65px;
-  border-radius: 50%;
-}
-
-.logo h3 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  margin-left: 5px;
-  background: linear-gradient(to right, var(--primary-color), var(--secondary-color), var(--tertiary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.nav-items {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav-items li {
-  margin-right: 20px;
-}
-
-.nav-items li:last-child {
-  margin-right: 50px;
-}
-
-.nav-items li a {
-  color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 18px;
-  position: relative;
-  transition: all 0.4s ease;
-}
-
-.nav-items li a:hover {
-  color: var(--link-hover-color);
-}
-
 h1 {
   color: var(--text-color);
   font-family: 'Poppins', sans-serif;
