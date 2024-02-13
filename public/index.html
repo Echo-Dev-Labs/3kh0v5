@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>3kh0</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -25,13 +27,35 @@
   </div>
   <section class="main">
     <h1>3kh0 v5</h1>
-    <h4>We're that website everyone is talkin about.</h4>
-    <p>Welcome to V5, check site news <a>here</a></p><br>
+    <h4>Welcome to V5, check site news <a>here</a></h4><br>
+    <p id="app"></p><br>
     <a class="button" href="/games">Play Now!</a>
   </section>
   <div id="particles-js"></div>
   <script src="particles.min.js"></script>
   <script src="/script.js"></script>
-  <script src="time.js"></script>
+  <script src="./time.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script>
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+      loop: true,
+      delay: 75,
+    });
+
+    typewriter
+      .typeString('Welcome to 3kh0v5!')
+      .pauseFor(2000)
+      .deleteAll()
+      .pauseFor(500)
+      .typeString('We\'re that website everyone is talkin about.')
+      .pauseFor(2000)
+      .deleteChars(38)
+      .typeString('glad your here!')
+      .pauseFor(2000)
+      .start(); 
+  </script>
 </body>
+
 </html>

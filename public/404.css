@@ -1,14 +1,11 @@
 :root {
-    --primary-color: #FFA500;
-    --secondary-color: #FF00FF;
-    --tertiary-color: #00FFFF;
-    --bg-color: black;
-    --text-color: #FFFFFF;
-    --link-color: #7fb2f5;
-    --link-hover-color: #a590f4;
-    --button-bg-color: #46c846;
-    --button-hover-bg-color: #5bd45b;
-  }
+  --primary-color: #FF5733; 
+  --secondary-color: #c491f4; 
+  --tertiary-color: #20B2AA; 
+  --bg-color: #000; 
+  --text-color: #FFFFFF; 
+}
+
   
   body {
     font-family: 'Poppins', sans-serif;
@@ -41,13 +38,15 @@
   button {
     padding: 10px 15px;
     border: none;
+    font-size:15px;
     outline: none;
     font-weight: bold;
     border-radius: 5px;
+    background:transparent;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--button-bg-color);
-    color: white;
+    border: 1px solid var(--secondary-color);
+    color: var(--text-color);
     transition: background-color 0.3s ease;
   }
   
@@ -58,6 +57,7 @@
   .desc {
     color: var(--text-color);
     transition: color 0.3s ease;
+    margin-top: -30px;
   }
   
   .desc p {

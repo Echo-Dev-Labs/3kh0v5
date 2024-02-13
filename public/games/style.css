@@ -1,12 +1,11 @@
 :root {
-  --primary-color: #FFA500;
-  --secondary-color: #FF00FF;
-  --tertiary-color: #00FFFF;
-  --background-color: black;
-  --text-color: #FFFFFF;
-  --link-hover-color: #00FFFF;
-  --icon-color: grey;
+  --primary-color: #FF5733; 
+  --secondary-color: #c491f4; 
+  --tertiary-color: #20B2AA; 
+  --bg-color: #000; 
+  --text-color: #FFFFFF; 
 }
+
 
 body {
   margin: 0;
@@ -34,7 +33,7 @@ h1 {
 .search-container {
   display: flex;
   width: 80vh;
-  margin: 10px auto;
+  margin: 30px auto;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px;
@@ -42,7 +41,8 @@ h1 {
 }
 
 .search-container i {
-  color: var(--icon-color);
+  color: var(--text-color);
+  opacity:0.5;
   margin: 5px;
 }
 
