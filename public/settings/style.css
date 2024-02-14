@@ -1,7 +1,7 @@
 
 :root {
   --primary-color: #FF5733; 
-  --secondary-color: #c491f4; 
+  --secondary-color: #b87bf1; 
   --tertiary-color: #20B2AA; 
   --bg-color: #000; 
   --text-color: #FFFFFF; 
@@ -15,6 +15,7 @@ body {
   background-color: var(--bg-color);
   font-family: 'Poppins', sans-serif;
 }
+
 
 #particles-js {
   width: 100%;
@@ -96,3 +97,98 @@ body {
   color: transparent;
 }
 
+.settings {
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 1fr;
+}
+
+.category {
+  padding: 15px;
+  margin:15px;
+  border-radius: 5px;
+  border: 1px solid var(--text-color);
+}
+
+
+.category h2 {
+  color: var(--text-color);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  color: var(--text-color);
+}
+
+.buttons {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  padding: 8px;
+  width: 45%;
+  color:var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  background-color: transparent;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5px;
+}
+
+
+.button {
+  padding: 8px 20px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+select::after {
+  content: '\25BC';
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 10px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+span{
+  vertical-align: text-top;
+}
+
+#panic input{
+  width:90%;
+}
