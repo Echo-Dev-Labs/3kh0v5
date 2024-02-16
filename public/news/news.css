@@ -1,0 +1,17 @@
+.post-wrapper {
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    /* From https://css.glass */
+    background: rgba(66, 66, 66, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+}
+
+.post-title {
+    font-size: 23px;
+    color: #ffffff;
+    text-align: center;
+}

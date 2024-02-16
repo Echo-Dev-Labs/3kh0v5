@@ -30,7 +30,7 @@
       <li><a href="/"><span class="material-symbols-outlined">home</span> Home</a></li>
       <li><a href="/games"><span class="material-symbols-outlined">stadia_controller</span> Games</a></li>
       <li><a href="/search"><span class="material-symbols-outlined">language</span> Search</a></li>
-      <li><a><span class="material-symbols-outlined">settings</span> Settings</a></li>
+      <li><a href="/settings"><span class="material-symbols-outlined">settings</span> Settings</a></li>
     </div>
     <div class="time" id="time-clock"></div>
   </div>
@@ -67,6 +67,20 @@
       .pauseFor(1000)
       .start();
   </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      var panickey = localStorage.getItem('panicKey')
+      console.log(panickey);
+      var panicwebsite = localStorage.getItem('panicWebsite')
+      $(function () {
+        $(document).keydown(function (e) {
+          console.log(e.key);
+          if (e.key == panickey) {
+            window.open(panicwebsite, '_self')
+          }
+        });
+      });
+    </script>
 </body>
 
 </html>

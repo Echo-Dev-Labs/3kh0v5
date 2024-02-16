@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width">
   <title>3kh0</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="/time.js"></script>
-  <script src="js/search_engine.js"></script>
 </head>
+
 <body>
   <div class="nav">
     <div class="logo" onclick="window.open('/', '_self')">
@@ -22,74 +25,97 @@
       <li><a href="/"><span class="material-symbols-outlined">home</span> Home</a></li>
       <li><a href="/games"><span class="material-symbols-outlined">stadia_controller</span> Games</a></li>
       <li><a href="/search"><span class="material-symbols-outlined">language</span> Search</a></li>
-      <li><a><span class="material-symbols-outlined">settings</span> Settings</a></li>
+      <li><a href="/settings"><span class="material-symbols-outlined">settings</span> Settings</a></li>
     </div>
     <div class="time" id="time-clock"></div>
   </div>
   <!--- Setting Start -->
   <div class="settings">
     <div class="category">
-        <h2>Tab Cloak</h2>
-        <div class="section-content">
-          <br>
-          <div class="buttons">
-            <input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)" />
-            <input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())" />
-          </div>
-          <br>
-          <p class="section-text">Ready Made Cloaks</p>
-          <div class="buttons">
-            <select name="Readymade Cloaks" id="premadecloaks" title="Cloaks">
-              <option value="search">Google Search</option>
-              <option value="drive">Google Drive</option>
-              <option value="youtube">YouTube</option>
-              <option value="gmail">Gmail</option>
-              <option value="calendar">Google Calendar</option>
-              <option value="meets">Google Meet</option>
-              <option value="classroom">Google Classroom</option>
-              <option value="canvas">Canvas</option>
-              <option value="zoom">Zoom</option>
-              <option value="khan">Khan Academy</option>
-            </select><br><br>
-            <button class="button button2" onclick="setCloak()">Set</button>
-            <button class="button button2" onclick="resetTab()">Reset</button>
-          </div>
+      <h2>Tab Cloak</h2>
+      <div class="section-content">
+        <br>
+        <div class="buttons">
+          <input id="title" class="input" placeholder="Title" onkeyup="setTitle(this.value)" />
+          <input id="icon" class="input" placeholder="Favicon" onkeyup="setFavicon(this.value.trim())" />
+        </div>
+        <br>
+        <p class="section-text">Ready Made Cloaks</p>
+        <div class="buttons">
+          <select name="Readymade Cloaks" id="premadecloaks" title="Cloaks">
+            <option value="search">Google Search</option>
+            <option value="drive">Google Drive</option>
+            <option value="youtube">YouTube</option>
+            <option value="gmail">Gmail</option>
+            <option value="calendar">Google Calendar</option>
+            <option value="meets">Google Meet</option>
+            <option value="classroom">Google Classroom</option>
+            <option value="canvas">Canvas</option>
+            <option value="zoom">Zoom</option>
+            <option value="khan">Khan Academy</option>
+          </select><br><br>
+          <button class="button button2" onclick="setCloak()">Set</button>
+          <button class="button button2" onclick="resetTab()">Reset</button>
         </div>
       </div>
-  
-  <div class="category">
-    <h2>Search Engine</h2>
-    <div class="section-content">
-      <p class="searchenginechoice">Choose the Search Engine that will be used while using the Search feature.</p>
     </div>
-    <select onchange="selectSearchEngine(this.value)" id="searchEngineSelect">
-      <option value="https://www.google.com/search?q=%s">Google</option>
-      <option value="https://www.bing.com/search?q=%s">Bing</option>
-      <option value="https://search.brave.com/search?q=%s">Brave</option>
-      <option value="https://search.yahoo.com/search?p=%s">Yahoo</option>
-      <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
-    </select>    
-  </div>
-  <div class="category">
-    <h2>Panic Key</h2>
-    <div class="setting" id="panic">
-      <label for="panic-key-input">Key:</label> <br>
-      <input id="panic-key-input" class="input" type="text" value="]" />
-      <label for="panic-website-input">Website:</label><br>
-      <input id="panic-website-input" class="input" type="text" value="https://classroom.google.com" />
+
+    <div class="category">
+      <h2>Search Engine</h2>
+      <div class="section-content">
+        <p class="searchenginechoice">Choose the Search Engine that will be used while using the Search feature.</p>
+      </div>
+      <select onchange="selectSearchEngine(this.value)" id="searchEngineSelect">
+        <option value="https://www.google.com/search?q=%s">Google</option>
+        <option value="https://www.bing.com/search?q=%s">Bing</option>
+        <option value="https://search.brave.com/search?q=%s">Brave</option>
+        <option value="https://search.yahoo.com/search?p=%s">Yahoo</option>
+        <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
+      </select>
     </div>
-    <div class="button-container">
-      <button class="button" onclick="setPanicKey()">Save</button>
+    <div class="category">
+      <h2>Panic Key</h2>
+      <div class="setting" id="panic">
+        <label for="panic-key-input" style="color: var(--text-color);">Key:</label> <br>
+        <input id="panic-key-input" class="input" type="text"/>
+        <label for="panic-website-input" style="color: var(--text-color);">Website:</label><br>
+        <input id="panic-website-input" class="input" type="text"/>
+      </div>
+      <div class="button-container">
+        <button class="button" onclick="setPanicKey()">Save</button>
+      </div>
     </div>
-  </div>
-  <div class="category">
-    <h2>About:Blank</h2>
-    <div class="section-content">
-      <p class="searchenginechoice">About:Blanking opens the website in an about:blank tab, which isn't trackable. It wont show in your history, and the url wont show either.</p>
+    <div class="category">
+      <h2>About:Blank</h2>
+      <div class="section-content">
+        <p class="searchenginechoice">About:Blanking opens the website in an about:blank tab, which isn't trackable. It
+          wont show in your history, and the url wont show either.</p>
+      </div>
+      <div class="button-container">
+        <button href="about:blank" onclick="Go()" class="button">Open in About:Blank</button>
+      </div>
+      <div id="notification" class="notification">
+        <h2 id="notification-title"></h2>
+        <p id="notification-message"></p>
+        <div id="duration-bar" class="duration-bar"></div>
+      </div>
     </div>
-    <div class="button-container">
-      <button href="about:blank" onclick="Go()" class="button">Open in About:Blank</button>
-    </div>
-  </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+      var panickey = localStorage.getItem('panicKey')
+      console.log(panickey);
+      var panicwebsite = localStorage.getItem('panicWebsite')
+      $(function () {
+        $(document).keydown(function (e) {
+          console.log(e.key);
+          if (e.key == panickey) {
+            window.open(panicwebsite, '_self')
+          }
+        });
+      });
+    </script>
+    <script src="../notification.js"></script>
+    <script src="./js/search_engine.js"></script>
 </body>
+
 </html>
