@@ -1,7 +1,11 @@
 function showNotifi(time, duration, color, title, message) {
     var notification = document.createElement('div');
     notification.className = 'notification';
-    notification.style.backgroundColor = color;
+    notification.style.cssText = `
+        background-color: ${color};
+        font-size: 0.75em; 
+        animation-duration: ${duration * 0.1}s;
+    `;
 
     var notificationTitle = document.createElement('h2');
     notificationTitle.textContent = title;
@@ -27,10 +31,9 @@ function showNotifi(time, duration, color, title, message) {
     }, duration * 1000);
 
     setTimeout(function() {
-        notification.style.opacity = '0';
+        notification.style.animationName = 'fadeOut';
+        setTimeout(function() {
+            document.body.removeChild(notification);
+        }, (time - duration) * 1000);
     }, (time - 0.5) * 1000);
-
-    setTimeout(function() {
-        document.body.removeChild(notification);
-    }, time * 1000);
 }
