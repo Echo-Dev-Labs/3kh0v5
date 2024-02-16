@@ -6,6 +6,15 @@ const searchEngine = document.getElementById("uv-search-engine");
 const error = document.getElementById("uv-error");
 const errorCode = document.getElementById("uv-error-code");
 
+const url = new URLSearchParams(window.location.search);
+const q = url.get('q');
+if (q) {
+  const url = search(q, searchEngine.value);
+  localStorage.setItem('url', __uv$config.prefix + __uv$config.encodeUrl(url));
+  location.href = "/load.html"
+} else {
+}
+
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
@@ -17,7 +26,7 @@ form.addEventListener("submit", async (event) => {
     throw err;
   }
 
-  const url = search(address.value, searchEngine.value);
+  const url = search(address.value, localStorage.getItem('searchEngine'));
   localStorage.setItem('url', __uv$config.prefix + __uv$config.encodeUrl(url));
   location.href = "/load.html"
 });

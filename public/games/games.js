@@ -1,33 +1,26 @@
-// Fetch the JSON file
 fetch('games.json')
     .then(response => response.json())
     .then(games => {
-        // Get the container to display the games
+        games.sort((a, b) => a.name.localeCompare(b.name));
+
         const container = document.querySelector('.g-container');
-
-        // Clear the container
         container.innerHTML = '';
+        const gamecdn = "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/"
 
-        // Loop through the games
         games.forEach(game => {
-            // Create a new link element
             const link = document.createElement('a');
             link.className = 'g';
-            link.href = game.url;
+            link.href = gamecdn + game.root + "/" + game.file;
 
-            // Create a new image element
             const img = document.createElement('img');
-            img.src = game.image;
+            img.src = gamecdn + game.root + "/" + game.img;
 
-            // Create a new heading element
             const h3 = document.createElement('h3');
             h3.textContent = game.name;
 
-            // Append the image and heading to the link
             link.appendChild(img);
             link.appendChild(h3);
 
-            // Append the link to the container
             container.appendChild(link);
         });
     })
