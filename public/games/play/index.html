@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>3kh0 | Loading</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -14,12 +15,15 @@
             <h3>3kh0</h3>
         </div>
         <div class="nav-items">
-            <ul>
-                <li><a href="/"><span class="material-icons-outlined">home</span> Home</a></li>
-                <li><a href="/games"><span class="material-icons-outlined">gamepad</span> Games</a></li>
-                <li><a href="/search"><span class="material-icons-outlined">search</span> Search</a></li>
-                <li><a href="/settings"><span class="material-icons-outlined">settings</span> Settings</a></li>
-            </ul>
+            <li><a href="/"><span class="material-symbols-outlined">home</span> Home</a></li>
+            <li><a href="/games"><span class="material-symbols-outlined">stadia_controller</span> Games</a></li>
+            <li><a href="/search"><span class="material-symbols-outlined">language</span> Search</a></li>
+            <li><a href="/settings"><span class="material-symbols-outlined">settings</span> Settings</a></li>
+        </div>
+        <div class="controls">
+            <span class="material-symbols-outlined" onclick="goBack()">arrow_back</span>
+            <span class="material-symbols-outlined" onclick="refresh()">refresh</span>
+            <span class="material-symbols-outlined" onclick="toggleFullScreen()">fullscreen</span>
         </div>
     </div>
     <div class="loading-screen">
@@ -29,6 +33,25 @@
     </div>
     <iframe id="site-iframe" src="" style="z-index: 9999;"></iframe>
     <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function refresh() {
+            var iframe = document.getElementById('site-iframe');
+            iframe.src = iframe.src;
+        }
+
+        function toggleFullScreen() {
+            var iframe = document.getElementById('site-iframe');
+            if (!document.fullscreenElement) {
+                iframe.requestFullscreen().catch(err => {
+                    console.error(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
 
         let game = localStorage.getItem("game");
         if (game) {

@@ -8,12 +8,11 @@
 <p align="center">The refined unblocked games website.</p>
 
 
-This is the GitHub repo which is used to host the website. If you want to use the games on 3kh0 on your website, please message `silvereen_` on Discord.
+This is the GitHub repo which is used to host the website. If you want to use the games on 3kh0 on your website, please message `silvereen_` or `.xnc_` on Discord.
 <!-- More people will be using light mode in their web browser -->
 [![Join the 3kh0Dev Discord](https://invidget.switchblade.xyz/wv6huJAwEv?theme=light)](https://discord.io/3kh0_)
 
-> this is by Silvereen and apart of Echo Development Labs
-> **Note**
+> Made by Silvereen and NC \
 > **If you do fork this repo, please give the orginal repo a star! It helps out a lot.**
 
 [![Stargazers repo roster for @Echo-Dev-Labs/3kh0v5](https://reporoster.com/stars/light/Echo-Dev-Labs/3kh0v5)](https://github.com/Echo-Dev-Labs/3kh0v5/stargazers)
