@@ -192,3 +192,61 @@ span{
 #panic input{
   width:90%;
 }
+
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  opacity: 1;
+  display: none;
+  animation: slide-up 0.5s ease-out;
+}
+
+.notification.show {
+  display: block;
+}
+
+.notification.hide {
+  animation: slide-down 0.5s ease-out forwards;
+  transition: opacity 0.5s;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.duration-bar {
+  height: 5px;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.duration-bar.decrease {
+  animation: decrease-width linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes decrease-width {
+  to {
+    width: 0;
+  }
+}

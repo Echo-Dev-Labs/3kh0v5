@@ -13,4 +13,18 @@
   <div id="../particles-js"></div>
   <script src="../particles.min.js"></script>
   <script src="../script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    var panickey = localStorage.getItem('panicKey')
+    console.log(panickey);
+    var panicwebsite = localStorage.getItem('panicWebsite')
+    $(function () {
+      $(document).keydown(function (e) {
+        console.log(e.key);
+        if (e.key == panickey) {
+          window.open(panicwebsite, '_self')
+        }
+      });
+    });
+  </script>
   </body>
