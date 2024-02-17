@@ -8,8 +8,9 @@
         "node": ">=16.0.0"
     },
     "scripts": {
-        "start": "node index.js",
-        "shadow": "node index.js"
+        "start": "node index.js --host",
+        "run": "node index.js --host",
+        "shadow": "node index.js --host"
     },
     "keywords": [
         "proxy"
