@@ -8,7 +8,7 @@
 <p align="center">The refined unblocked games website.</p>
 
 
-This is the GitHub repo which is used to host the website. If you want to use the games on 3kh0 on your website, please message `silvereen_` or `.xnc_` on Discord.
+This is the GitHub repo which is used to host the website. If you want to use the games on 3kh0 on your website, please message `silvereen_` on Discord.
 <!-- More people will be using light mode in their web browser -->
 [![Join the 3kh0Dev Discord](https://invidget.switchblade.xyz/wv6huJAwEv?theme=light)](https://discord.io/3kh0_)
 
