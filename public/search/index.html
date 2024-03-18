@@ -67,20 +67,27 @@
       .pauseFor(1000)
       .start();
   </script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script>
-      var panickey = localStorage.getItem('panicKey')
-      console.log(panickey);
-      var panicwebsite = localStorage.getItem('panicWebsite')
-      $(function () {
-        $(document).keydown(function (e) {
-          console.log(e.key);
-          if (e.key == panickey) {
-            window.open(panicwebsite, '_self')
-          }
-        });
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    var panickey = localStorage.getItem('panicKey')
+    console.log(panickey);
+    var panicwebsite = localStorage.getItem('panicWebsite')
+    $(function () {
+      $(document).keydown(function (e) {
+        console.log(e.key);
+        if (e.key == panickey) {
+          window.open(panicwebsite, '_self')
+        }
       });
-    </script>
+    });
+
+    var searchEngine = localStorage.getItem('searchEngine');
+
+    if (searchEngine !== null) {
+      document.getElementById('uv-search-engine').value = searchEngine;
+    }
+  </script>
+  <script src="/js/cloak.js"></script>
 </body>
 
 </html>

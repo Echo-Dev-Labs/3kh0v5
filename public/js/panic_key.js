@@ -11,5 +11,6 @@ function setPanicKey() {
         showNotifi(3, 3, 'green', 'Success', 'Settings saved successfully! \n Tip: Please put http:// or https:// before the website next time!');
     }
 }
+
 panickey.setAttribute('value', localStorage.getItem('panicKey'));
 panicwebsite.setAttribute('value', localStorage.getItem('panicWebsite'));
