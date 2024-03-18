@@ -1,0 +1,37 @@
+{
+  "default": {
+    "primary-color": "#FF5733",
+    "secondary-color": "#c491f4",
+    "tertiary-color": "#20B2AA",
+    "bg-color": "#000",
+    "text-color": "#FFFFFF"
+  },
+  "newgreen": {
+    "primary-color": "#005500",
+    "secondary-color": "#66FF66",
+    "tertiary-color": "#33CC33",
+    "bg-color": "#000",
+    "text-color": "#FFFFFF"
+  },
+  "oceanic": {
+    "primary-color": "#0077CC",
+    "secondary-color": "#99CCFF",
+    "tertiary-color": "#003399",
+    "bg-color": "#01062b",
+    "text-color": "#FFFFFF"
+  },
+  "sunrise": {
+    "primary-color": "#FF9933",
+    "secondary-color": "#FFCC66",
+    "tertiary-color": "#FF6633",
+    "bg-color": "#000000",
+    "text-color": "#FFFFFF"
+  },
+  "royal": {
+    "primary-color": "#6A0DAD",
+    "secondary-color": "#B652E5",
+    "tertiary-color": "#2F0743",
+    "bg-color": "#000000",
+    "text-color": "#FFFFFF"
+  }
+}

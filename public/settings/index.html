@@ -73,6 +73,23 @@
         <option value="https://duckduckgo.com/?q=%s">DuckDuckGo</option>
       </select>
     </div>
+
+    <div class="category">
+      <h2>Themes</h2>
+      <div class="section-content">
+        <p class="searchenginechoice">Choose the Search Engine that will be used while using the Search feature.</p>
+      </div>
+      <select id="themeSelector" onchange="changeTheme()">
+        <option value="default">Default</option>
+        <option value="newgreen">New Green</option>
+        <option value="oceanic">Oceanic Blue</option>
+        <option value="sunrise">Golden Sunrise</option>
+        <option value="royal">Royal Purple</option>
+      </select>
+      
+    </div>
+
+
     <div class="category">
       <h2>Panic Key</h2>
       <div class="setting" id="panic">
@@ -100,6 +117,8 @@
         <div id="duration-bar" class="duration-bar"></div>
       </div>
     </div>
+  </div>
+    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
       var panickey = localStorage.getItem('panicKey')
@@ -157,6 +176,7 @@
     <script src="/js/search_engine.js"></script>
     <script src="/js/cloak.js"></script>
     <script src="/js/panic_key.js"></script>
+    <script src="/js/themes.js"></script>
 </body>
 
 </html>
