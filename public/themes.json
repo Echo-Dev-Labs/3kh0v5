@@ -33,5 +33,12 @@
     "tertiary-color": "#2F0743",
     "bg-color": "#000000",
     "text-color": "#FFFFFF"
+  },
+  "charcoal": {
+    "primary-color": "#1A1A1A",
+    "secondary-color": "#8a8a8a",
+    "tertiary-color": "#1A1A1A",
+    "bg-color": "#0a0a0a",
+    "text-color": "#e6e6e6"
   }
 }
