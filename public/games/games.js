@@ -29,3 +29,17 @@ fetch('games.json')
         });
     })
     .catch(error => console.error('Error:', error));
+
+const search = document.getElementById('searchbar')
+search.addEventListener("input", function() {
+    search.value = search.value.toLowerCase();
+    let x = document.getElementsByClassName('g');
+    for (i = 0; i < x.length; i++) {
+      if (!x[i].querySelector('h3').textContent.toLowerCase().includes(search.value)) {
+        x[i].style.display = "none";
+      }
+      else {
+        x[i].style.display = "inline-block";
+      }
+    }
+});
