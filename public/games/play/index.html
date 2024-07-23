@@ -56,7 +56,7 @@
         let game = localStorage.getItem("game");
         if (game) {
             game = JSON.parse(game);
-            const gamecdn = "https://glcdn.githack.com/kaioxdev/legacy-assets/-/raw/main/";
+            const gamecdn = "/cdn/";
             const gameUrl = gamecdn + game.root + "/" + game.file;
 
             var iframe = document.getElementById("site-iframe");

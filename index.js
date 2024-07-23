@@ -7,6 +7,7 @@ import { join } from "path";
 import { hostname } from "os";
 import cors from "cors";
 import { createBareServer } from "@tomphttp/bare-server-node";
+import proxy from "express-http-proxy";
 const publicPath = fileURLToPath(new URL("./public/", import.meta.url));
 
 let port = 8080;
@@ -20,6 +21,13 @@ app.use(cors());
 app.use(express.static(publicPath, { maxAge: "1y" }));
 
 app.use("/uv/", express.static(uvPath));
+
+app.use(
+	'/cdn',
+	proxy(`https://3kh0-assets.silvereen.net`, {
+		proxyReqPathResolver: (req) => `/3kh0-assets/${req.url}`,
+	})
+);
 
 app.use((req, res) => {
   res.status(404);
