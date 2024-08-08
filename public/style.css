@@ -38,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding-left: 10px;
 }
 
 .logo img {
@@ -69,6 +70,7 @@ body {
   flex-grow: 1; 
   margin: 0;
   padding: 0;
+  position: absolute;
 }
 
 .nav-items li {

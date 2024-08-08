@@ -1,18 +1,18 @@
 
-<p align="center">
+<p align="left">
 <kbd>
-<img style="border-radius:50%" height="150px" src="http://web.archive.org/web/20230416012103if_/https://cdn.jsdelivr.net/gh/Rahib777-7/3kh0TEMP@main/images/logo.png">
+<img style="border-radius:50%" height="150px" src="https://github.com/Realm-Services/realm-services.github.io/blob/main/images/logo2.png?raw=true">
 </kbd>
 </p>
-<h1 align="center">3kh0 v5</h1>
-<p align="center">The refined unblocked games website.</p>
+<h1 align="left">3kh0 v5, by Realm Services</h1>
+<p align="left">The refined unblocked games website.</p>
 
 
-This is the GitHub repo which is used to host the website. If you want to use the games on 3kh0 on your website, please message `silvereen_` on Discord.
-<!-- More people will be using light mode in their web browser -->
-[![Join the 3kh0Dev Discord](https://invidget.switchblade.xyz/wv6huJAwEv?theme=light)](https://discord.io/3kh0_)
+This github repo will be used by Realm Services to fix bugs related to 3kh0v5.
 
-> Made by Silvereen and NC \
+[![Join the 3kh0Dev Discord](https://invidget.switchblade.xyz/wv6huJAwEv?)](https://discord.io/3kh0_)
+
+> Made by Silvereen and NC. Modified by Realm Services. \
 > **If you do fork this repo, please give the orginal repo a star! It helps out a lot.**
 
 [![Stargazers repo roster for @Echo-Dev-Labs/3kh0v5](https://reporoster.com/stars/light/Echo-Dev-Labs/3kh0v5)](https://github.com/Echo-Dev-Labs/3kh0v5/stargazers)
@@ -52,7 +52,3 @@ Its that easy! To configure the port you can do do in /public/uv/js/index.js.
 
 Thank you to all of these amazing people for helping work on this project!<br>
 [![Contrib](https://contrib.rocks/image?repo=Echo-Dev-Labs/3kh0v5#)](https://github.com/Echo-Dev-Labs/3kh0v5/graphs/contributors)
-
-### devlog
-`1/17/24`
-This readme is in BETA so it'll change soon. I startd working on v5 in React but i decided not too because it would be too..., uh, well... complicated. Using npm router and trying to route every game page and file would be a tough process so this regular html project is probably going to be the alpha version until I rewrite it with another frameork for production. It most likely will be React but since I am very new and I still have to learn it, I will just use vinella html and css to at least get somehting. At some point in time I am planning to switcch to some node based framework so I can add maybe a live chat, Kasm, or a proxy later down the line.
