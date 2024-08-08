@@ -38,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding-left: 10px;
 }
 
 .logo img {
