@@ -35,7 +35,7 @@ h1 {
   width: 80vh;
   margin: 30px auto;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 10px;
   border-radius: 5px;
 }
@@ -60,7 +60,7 @@ h1 {
   display: flex;
   margin: 10px;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
 }
 
 .g {
@@ -69,7 +69,7 @@ h1 {
   border-radius: 5px;
   text-align: center;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.2);
   text-decoration: none;
   color: var(--text-color);
   cursor: pointer;
