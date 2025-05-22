@@ -46,7 +46,7 @@ You can host our website on a cloud hosting solution like Replit or Render here.
 3. `npm install`
 4. `npm start`
 3kh0v5 is running on port 8080
-Its that easy! To configure the port you can do do in /public/uv/js/index.js.
+Its that easy! To configure the port you can do that in index.js in the root directory.
 
 ## Contributors
 
